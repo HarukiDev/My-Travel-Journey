@@ -1,0 +1,241 @@
+.imagePage {
+    width: 100%; 
+    padding-top: 40px;
+    height: auto; 
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+    transition: opacity 0.5s ease; 
+    opacity: 0; 
+}
+
+.imagePage.active {
+    display: block;
+}
+
+.imageList {
+    display: grid;
+    list-style: none;
+    grid-template-columns: repeat(3, 200px); 
+    grid-template-rows: repeat(3, 200px); 
+    gap: 10px; 
+}
+
+@media (max-width: 768px) {
+    .imageList {
+        grid-template-columns: repeat(3, 120px); 
+        grid-template-rows: repeat(3, 120px); 
+    }
+  }
+
+.imagePage1 .imageList li {
+    width: 200px; 
+    height: 200px; 
+}
+
+.imagePage1 .imageList .item1,
+.imagePage1 .imageList .item2,
+.imagePage1 .imageList .item3,
+.imagePage1 .imageList .item4,
+.imagePage1 .imageList .item5,
+.imagePage1 .imageList .item6,
+.imagePage1 .imageList .item7,
+.imagePage1 .imageList .item8,
+.imagePage1 .imageList .item9 {
+    background-size: cover;
+    background-position: center;
+    transition: opacity 0.5s;
+}
+
+.imagePage1 .imageList li:hover .bg {
+    opacity: 0.7;
+}
+
+/*image Page 1*/
+.imagePage1 .imageList .item1{
+    width: 100%;
+    height: 100%;
+    background: url('/assets/img/imgGaleri/destination_168784361355453.jpg');
+    background-size: cover;
+    background-position: center;
+    transition: opacity 0.5s;
+}
+
+.imagePage1 .imageList .item2{
+    width: 100%;
+    height: 100%;
+    background: url('/assets/img/imgGaleri/pelataran-benteng-kuto-besak-bkb-palembang-foto-cuci-hat-crg2.jpg');
+    background-size: cover;
+    background-position: center;
+    transition: opacity 0.5s;
+}
+
+.imagePage1 .imageList .item3{
+    width: 100%;
+    height: 100%;
+    background: url('/assets/img/imgGaleri/20230430_140424.jpg');
+    background-size: cover;
+    background-position: center;
+    transition: opacity 0.5s;
+}
+
+.imagePage1 .imageList .item4{
+    width: 100%;
+    height: 100%;
+    background: url('/assets/img/imgGaleri/38476228_293184164749444_7071328563810533376_n.jpg');
+    background-size: cover;
+    background-position: center;
+    transition: opacity 0.5s;
+}
+
+.imagePage1 .imageList .item5{
+    width: 100%;
+    height: 100%;
+    background: url('/assets/img/imgGaleri/palembang-01.jpg');
+    background-size: cover;
+    background-position: center;
+    transition: opacity 0.5s;
+}
+
+.imagePage1 .imageList .item6{
+    width: 100%;
+    height: 100%;
+    background: url('/assets/img/imgGaleri/jembatanampera.jpeg');
+    background-size: cover;
+    background-position: center;
+    transition: opacity 0.5s;
+}
+
+.imagePage1 .imageList .item7{
+    width: 100%;
+    height: 100%;
+    background: url('/assets/img/imgGaleri/je2mbatan_ampera.jpg');
+    background-size: cover;
+    background-position: center;
+    transition: opacity 0.5s;
+}
+
+.imagePage1 .imageList .item8{
+    width: 100%;
+    height: 100%;
+    background: url('/assets/img/imgGaleri/musi1.jpg');
+    background-size: cover;
+    background-position: center;
+    transition: opacity 0.5s;
+}
+
+.imagePage1 .imageList .item9{
+    width: 100%;
+    height: 100%;
+    background: url('/assets/img/imgGaleri/1f163b7e3edfb13c85ec4c4ecc80987b.jpeg');
+    background-size: cover;
+    background-position: center;
+    transition: opacity 0.5s;
+}
+
+/*image page 2*/
+.imagePage2 .imageList .item1{
+    width: 100%;
+    height: 100%;
+    background: url('/assets/img/imgGaleri/twa-punti-kayu-palembang-siap-sambut-pengunjung-saat-lebaran-2023-yuk-intip-fasilitasnya-7Bt6PBHBrq.jpeg');
+    background-size: cover;
+    background-position: center;
+    transition: opacity 0.5s;
+}
+
+.imagePage2 .imageList .item2{
+    width: 100%;
+    height: 100%;
+    background: url('/assets/img/imgGaleri/Punti-Kayu-5.jpg');
+    background-size: cover;
+    background-position: center;
+    transition: opacity 0.5s;
+}
+
+.imagePage2 .imageList .item3{
+    width: 100%;
+    height: 100%;
+    background: url('/assets/img/imgGaleri/images.jpeg');
+    background-size: cover;
+    background-position: center;
+    transition: opacity 0.5s;
+}
+
+.imagePage2 .imageList .item4{
+    width: 100%;
+    height: 100%;
+    background: url('/assets/img/imgGaleri/waterpark-punti-kayu.jpg');
+    background-size: cover;
+    background-position: center;
+    transition: opacity 0.5s;
+}
+
+.imagePage2 .imageList .item5{
+    width: 100%;
+    height: 100%;
+    background: url('/assets/img/imgGaleri/18_Benteng_Kuto_Besak_I_Foto_By_Dispar_Plg_700395de65.jpg');
+    background-size: cover;
+    background-position: center;
+    transition: opacity 0.5s;
+}
+
+.imagePage2 .imageList .item6{
+    width: 100%;
+    height: 100%;
+    background: url('/assets/img/imgGaleri/4db7666ccbfd60cb5fa0eb1dd2ac5f79.jpg');
+    background-size: cover;
+    background-position: center;
+    transition: opacity 0.5s;
+}
+
+.imagePage2 .imageList .item7{
+    width: 100%;
+    height: 100%;
+    background: url('/assets/img/imgGaleri/094243700_1567952661-Sungai_Musi.jpg');
+    background-size: cover;
+    background-position: center;
+    transition: opacity 0.5s;
+}
+
+.imagePage2 .imageList .item8{
+    width: 100%;
+    height: 100%;
+    background: url('/assets/img/imgGaleri/sungai-musi.jpeg');;
+    background-size: cover;
+    background-position: center;
+    transition: opacity 0.5s;
+}
+
+.imagePage2 .imageList .item9{
+    width: 100%;
+    height: 100%;
+    background: url('/assets/img/imgGaleri/musi.jpeg');;
+    background-size: cover;
+    background-position: center;
+    transition: opacity 0.5s;
+}
+
+.bg:hover {
+    opacity: 0.7;
+}
+
+.dotsImage {
+    padding-top: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.dotImage {
+    height: 10px;
+    width: 10px;
+    background-color: rgb(144, 183, 237);
+    border-radius: 50%;
+    margin: 0 5px;
+    cursor: pointer;
+}
+
+.dotImage.active {
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgb(8, 185, 249) 0px 0px 12px;
+    background-color: rgb(47, 132, 252);
+}

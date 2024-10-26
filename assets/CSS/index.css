@@ -1,0 +1,252 @@
+/*Media query*/
+@media (max-width: 600px) {
+    .journey {
+        height: 220vh !important;
+    }
+    .galeri {
+        height: 100vh !important; 
+    }
+}
+
+/* Gaya untuk perangkat lebih kecil (Tablet Portrait and Landscape) */
+@media (max-width: 414px) {
+    .journey {
+        height: 220vh !important;
+    }
+}
+
+/* Global Styles */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+}
+
+html, body {
+    background-color: #454343;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    -ms-overflow-style: none; /* for Internet Explorer, Edge */
+    scrollbar-width: none; /* for Firefox */
+    overflow-y: scroll; 
+}
+
+body::-webkit-scrollbar {
+    display: none !important; /* for Chrome, Safari, and Opera */
+}
+
+/* Home*/
+.home {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.homeContainer {
+    width: 100%;
+    height: 100%;
+}
+
+.homeBG{
+    background: linear-gradient(to top, rgba(85, 80, 102, 0.914), transparent), url('/assets/img/ammar-andiko-vq7psXi5Udg-unsplash.jpg');
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 100%;
+    filter: brightness(60%);
+}
+
+/* journey*/
+.journey {
+    position: relative;
+    width: 100%;
+    height: 155vh;
+    overflow: hidden;
+}
+
+.journeyContainer {
+    width: 100%;
+    height: 100%;
+}
+
+.journeyBG{
+    background: linear-gradient(to bottom, rgba(85, 80, 102, 0.947), transparent), linear-gradient(to top, rgba(48, 39, 77, 0.914), transparent), url('/assets/img/about-beach.jpg');
+    background-size: cover;
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+    filter: brightness(60%);
+}
+
+.overlayHome {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 10; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.overlayJourney{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 10; 
+    display: flex;
+    padding-top: 100px;
+    justify-content: center;
+    
+}
+
+.kontenHome {
+    text-align: center;
+    width: 100%;
+}
+
+.judulHome {
+    width: 100%;
+    text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.968);
+}
+
+.judulHome h1 {
+    font-size: 50px;
+    color: rgb(255, 255, 255);
+    font-family: fantasy;
+    font-weight: 100;
+    padding-bottom: 10px;
+}
+
+.namaWebsite p {
+    font-size: 15px;
+    line-height: 1.5;
+    color: rgba(255, 255, 255, 0.947);
+    font-family: 'Montserrat', sans-serif;
+    width: 45%; 
+    margin: 0 auto;
+}
+
+.kontenJourney {
+    width: 100%;
+    text-align: center;
+}
+
+.judulJourney {
+    width: 100%;
+    text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.968);
+}
+
+.judulJourney h1 {
+    font-size: 30px;
+    color: rgb(192, 208, 231);
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    padding-bottom: 10px;
+}
+
+.judulJourney p {
+    font-size: 15px;
+    line-height: 1.5;
+    color: rgba(198, 198, 198, 0.947);
+    font-family: 'Montserrat', sans-serif;
+}
+
+/* galeri*/
+.galeri {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 100px;
+    background: #1d1c30;
+    width: 100%;
+    height: 120vh;
+    overflow: hidden;
+}
+
+.galeriContainer {
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+.kontenGaleri {
+    width: 100%;
+    text-align: center;
+}
+
+.judulGaleri {
+    width: 100%;
+    text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.968);
+}
+
+.judulGaleri h1 {
+    font-size: 30px;
+    color: rgb(192, 208, 231);
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    padding-bottom: 10px;
+}
+
+.judulGaleri p {
+    font-size: 15px;
+    line-height: 1.5;
+    color: rgba(198, 198, 198, 0.947);
+    font-family: 'Montserrat', sans-serif;
+}
+
+/* about*/
+.about {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 100px;
+    background: #1d1c30;
+    width: 100%;
+    height: 80vh;
+    overflow: hidden;
+}
+
+.aboutContainer {
+    width: 100%;
+    height: 100%;
+}
+
+.kontenAbout {
+    width: 100%;
+    text-align: center;
+}
+
+.judulAbout {
+    width: 100%;
+    text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.968);
+}
+
+.judulAbout h1 {
+    font-size: 30px;
+    color: rgb(192, 208, 231);
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    padding-bottom: 10px;
+}
+
+.judulAbout p {
+    font-size: 15px;
+    line-height: 1.5;
+    color: rgba(198, 198, 198, 0.947);
+    font-family: 'Montserrat', sans-serif;
+}
+
+
+
+
+

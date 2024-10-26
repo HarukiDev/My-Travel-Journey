@@ -1,0 +1,171 @@
+.cardAbout {
+    margin-top: 40px;
+    width: 100%;
+    height: 300px;
+}
+
+.cardAboutContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+}
+
+.cardMain {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 80%;
+    height: 100%;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+    background: #2a2846;
+    overflow: hidden;
+}
+
+.imageKonten {
+    width: auto;
+    height: 100%;
+    overflow: hidden;
+}
+
+.imageKonten img {
+    width: 300px;
+    height: 100%;
+    background-size: cover;
+}
+
+.teksKonten {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    padding: 20px;
+}
+
+.teksKonten h1 {
+    font-size: 30px;
+    color: rgb(255, 255, 255);
+    font-family: fantasy;
+    font-weight: 100;
+}
+
+.teksKonten p {
+    color: rgba(198, 198, 198, 0.947);
+    font-family: 'Montserrat', sans-serif;
+    text-shadow: 3px 3px 6px rgba(12, 11, 11, 0.805);
+    text-align: justify;
+    padding-top: 20px;
+}
+
+.creatorAbout {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+
+.socialMediaHomeAbout {
+    display: flex;
+    justify-content: flex-end;
+    gap: 20px;
+    padding: 20px 20px 20px 0px;
+}
+
+.sosmedAbout {
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 100%;
+    cursor: pointer;
+    transition: all 0.5s ease-in-out;
+    box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.466);
+}
+
+.socialMediaHomeAbout a {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-decoration: none;
+    font-size: 30px;
+}
+
+.socialMediaHomeABout .sosmedAbout:nth-child(1) i{
+    color: rgba(47, 132, 252, 0.678);
+}
+
+.socialMediaHomeABout .sosmedAbout:nth-child(1) p {
+    margin: 0;
+    text-align: center;
+    color: rgba(144, 183, 237, 0.752);
+    font-family: 'Montserrat', sans-serif;
+}
+
+.socialMediaHomeAbout .sosmedAbout:nth-child(2) i{
+    color: rgba(47, 252, 112, 0.678);
+}
+
+.socialMediaHomeAbout .sosmedAbout:nth-child(2) p {
+    margin: 0;
+    text-align: center;
+    color: rgba(144, 183, 237, 0.752);
+    font-family: 'Montserrat', sans-serif;
+}
+
+.socialMediaHomeAbout .sosmedAbout:nth-child(3) i{
+    color: rgba(255, 255, 255, 0.678);
+}
+
+.socialMediaHomeAbout .sosmedAbout:nth-child(3) p {
+    margin: 0;
+    text-align: center;
+    color: rgba(144, 183, 237, 0.752);
+    font-family: 'Montserrat', sans-serif;
+}
+
+@media (max-width: 768px) {
+    .cardAbout {
+        height: 500px;
+    }
+
+    .imageKonten img {
+        width: 390px;
+        height: 100%;
+        background-size: cover;
+    }
+
+    .about {
+        height: 110vh;
+    }
+
+    .sosmedAbout {
+        width: 20px;
+        height: 20px;
+    }
+
+    .socialMediaHomeAbout a {
+        font-size: 20px;
+    }
+    
+    .cardMain {
+        flex-direction: column;
+    }
+
+    .teksKonten {
+        padding: 0px 20px 20px 20px;
+    }
+
+    .teksKonten h1 {
+        font-size: 30px;
+    }
+    
+    .teksKonten p {
+        font-size: 10px;
+    }
+}
+

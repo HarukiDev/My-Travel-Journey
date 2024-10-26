@@ -1,0 +1,70 @@
+.Creator {
+    padding: 30px;
+}
+
+.mediaSocialKonten p {
+    color: rgb(192, 208, 231);
+    font-family: 'Montserrat', sans-serif;
+    font-size: 12px;
+}
+
+.socialMediaHome {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    padding-top: 20px;
+}
+
+.sosmed {
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 100%;
+    cursor: pointer;
+    transition: all 0.5s ease-in-out;
+    box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.466);
+}
+
+.socialMediaHome a {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-decoration: none;
+    font-size: 30px;
+}
+
+.socialMediaHome .sosmed:nth-child(1) i{
+    color: rgba(47, 132, 252, 0.678);
+}
+
+.socialMediaHome .sosmed:nth-child(1) p {
+    margin: 0;
+    text-align: center;
+    color: rgba(144, 183, 237, 0.752);
+    font-family: 'Montserrat', sans-serif;
+}
+
+.socialMediaHome .sosmed:nth-child(2) i{
+    color: rgba(47, 252, 112, 0.678);
+}
+
+.socialMediaHome .sosmed:nth-child(2) p {
+    margin: 0;
+    text-align: center;
+    color: rgba(144, 183, 237, 0.752);
+    font-family: 'Montserrat', sans-serif;
+}
+
+.socialMediaHome .sosmed:nth-child(3) i{
+    color: rgba(255, 255, 255, 0.678);
+}
+
+.socialMediaHome .sosmed:nth-child(3) p {
+    margin: 0;
+    text-align: center;
+    color: rgba(144, 183, 237, 0.752);
+    font-family: 'Montserrat', sans-serif;
+}

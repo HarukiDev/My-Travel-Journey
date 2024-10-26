@@ -1,0 +1,211 @@
+.timelineStyle {
+    height: 100%;
+    padding: 35px 15px;
+}
+
+.timelineContainer {
+    width: 85%;
+    margin: auto;
+    position: relative;
+}
+
+.timelineContainer::before {
+    content: "";
+    position: absolute;
+    width: 2px;
+    height: 100%;
+    background-color: rgb(144, 183, 237);
+    left: calc(50% - 1px);
+}
+
+.timelineKonten {
+    margin-bottom: 40px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    overflow: visible;
+}
+
+.dot {
+    height: 16px;
+    width: 16px;
+    border: 2px solid rgb(170, 201, 245);
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgb(8, 185, 249) 0px 0px 12px;
+    background-color: rgb(47, 132, 252);
+    position: absolute;
+    left: calc(50% - 8px);
+    border-radius: 50%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.timelineKonten p{
+    text-align: justify;
+}
+
+.timelineKonten:nth-child(odd) {
+    padding-right: calc(53% + 35px);
+    text-align: right;
+}
+
+.timelineKonten:nth-child(even) {
+    padding-left: calc(53% + 30px);
+    text-align: left;
+}
+
+/* Gaya untuk perangkat kecil (Tablet Portrait and Landscape) */
+@media (max-width: 600px) {
+    .timelineKonten:nth-child(odd) {
+        padding-right: 0;
+        padding-bottom: 40px;
+        text-align: center;
+    }
+    
+    .timelineKonten:nth-child(even) {
+        padding-left: 0;
+        padding-bottom: 40px;
+        text-align: center;
+    }
+
+    .timelineContainer::before {
+        z-index: -1;
+    }
+
+    .timelineKonten {
+        z-index: 10;
+        margin-bottom: 70px;
+    }
+
+    .dot {
+        bottom: 0;
+        z-index: 2;
+    }
+
+    .timelineKonten:last-child {
+        padding-bottom: 0;
+    }
+    .timelineKonten:last-child .dot {
+        display: none;
+    }
+}
+
+/* Gaya untuk perangkat lebih kecil (Tablet Portrait and Landscape) */
+@media (max-width: 414px) {
+    .timelineKonten:nth-child(odd) {
+        padding-right: 0;
+        padding-bottom: 40px;
+        text-align: center;
+    }
+    
+    .timelineKonten:nth-child(even) {
+        padding-left: 0;
+        padding-bottom: 40px;
+        text-align: center;
+    }
+    
+    .timelineContainer::before {
+        z-index: -1;
+    }
+
+    .timelineKonten {
+        z-index: 10;
+        margin-bottom: 70px;
+    }
+
+    .dot {
+        bottom: 5;
+    }
+
+    .dot:last-child {
+        display: none;
+    }
+
+    .timelineKonten:last-child {
+        padding-bottom: 0;
+    }
+    .timelineKonten:last-child .dot {
+        display: none;
+    }
+}
+
+.deskWisata h1 {
+    font-size: 30px;
+    color: rgb(192, 208, 231);
+    font-family: fantasy;
+    font-weight: 100;
+    padding-bottom: 10px;
+    text-shadow: 3px 3px 6px rgba(12, 11, 11, 0.805);
+}
+
+.deskWisata p {
+    color: rgba(198, 198, 198, 0.947);
+    font-family: 'Montserrat', sans-serif;
+    text-shadow: 3px 3px 6px rgba(12, 11, 11, 0.805);
+}
+
+.timelineKonten:nth-child(1) .cardKonten {
+    background: linear-gradient(to top, rgba(5, 26, 71, 0.7), transparent), 
+                linear-gradient(to bottom, rgba(5, 26, 71, 0.7), transparent), 
+                url('/assets/img/imgTimeline/benteng-kuto-besak-profile1646196753.jpeg');
+    background-size: cover;
+    background-position: center;
+    border: 0px solid rgb(0, 102, 246);
+    padding: 30px;
+    border-radius: 5px;
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+    color: white;
+    width: 100%;
+    height: 100%;
+    filter: brightness(100%);
+}
+
+.timelineKonten:nth-child(2) .cardKonten{
+    background: linear-gradient(to top, rgba(5, 26, 71, 0.7), transparent), 
+                linear-gradient(to bottom, rgba(5, 26, 71, 0.7), transparent), 
+                url('/assets/img/imgTimeline/Pendangakalan-Parah-Sungai-Musi-Butuh-Dikeruk.jpg');
+    background-size: cover; 
+    background-position: center;
+    border: 0px solid rgb(0, 102, 246);
+    padding: 30px;
+    border-radius: 5px;
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+    color: white;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    filter: brightness(100%);
+}
+
+.timelineKonten:nth-child(3) .cardKonten {
+    background: linear-gradient(to top, rgba(5, 26, 71, 0.7), transparent), 
+                linear-gradient(to bottom, rgba(5, 26, 71, 0.7), transparent), 
+                url('/assets/img/imgTimeline/amran-alie-qRang0oOxgI-unsplash.jpg');
+    background-size: cover; 
+    background-position: center;
+    border: 0px solid rgb(0, 102, 246);
+    padding: 30px;
+    border-radius: 5px;
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+    color: white;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    filter: brightness(100%);
+}
+
+.timelineKonten:nth-child(4) .cardKonten{
+    background: linear-gradient(to top, rgba(5, 26, 71, 0.7), transparent), 
+                linear-gradient(to bottom, rgba(5, 26, 71, 0.7), transparent), 
+                url('/assets/img/imgTimeline/Punti-Kayu-Palembang-Michael-Kesuma.jpg');
+    background-size: cover; 
+    background-position: center;
+    border: 0px solid rgb(0, 102, 246);
+    padding: 30px;
+    border-radius: 5px;
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+    color: white;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    filter: brightness(100%);
+}
